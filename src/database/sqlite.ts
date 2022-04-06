@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 
 export const db = new sqlite3().Database(
-    './note',
+    './note.db',
     sqlite3.OPEN_READWRITE,
     // @ts-ignore
     (err) => {
